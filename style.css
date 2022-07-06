@@ -424,10 +424,98 @@ width: 100%;
 
 /* PRICING */
 
+.pricing__wrapper{
+    max-width: 1280px;
+}
+
 .pricing__description{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     text-align: center;
+}
+
+.pricing__plan--wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing__plan{
+    width: calc(90% / 3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.pricing__plan--top{
+    border: 1px solid lightgray;
+    border-radius:4px 4px 0 0 ;
+    padding: 32px 0;
+}
+
+.pricing__plan--mid,
+.pricing__plan--bottom{
+border: 1px solid lightgray; 
+}
+
+.pricing__plan--mid{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 4px;
+padding: 32px 0;
+}
+
+.pricing__plan--monthly{
+    color:rgba(160, 174, 192);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pricing__plan--category{
+    font-size: 20px;
+}
+
+.pricing__plan--price{
+    padding: 24px;
+    font-size: 48px;
+}
+
+.pricing__plan--level{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pricing__plan--features{
+    font-size: 16px;
+    font-weight: 600;
+    color:rgba(160, 174, 192);
+}
+
+.buy{
+    border: none;
+    padding: 20px 60px;
+    margin: 40px 0;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.btn-1{
+    background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
+    color: white;
+}
+
+.plan__business{
+    border: none;
+    color: white;
+    background-color: rgb(76, 81, 191);
 }
